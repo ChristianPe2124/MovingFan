@@ -1,0 +1,30 @@
+body {
+  background: silver;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+img {
+  width: 100px;
+  animation: fanAnimation linear infinite;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+
+  & button {
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
+
+@keyframes fanAnimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
